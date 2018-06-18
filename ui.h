@@ -111,8 +111,8 @@ _UI_EXTERN void uiWindowSetBorderless(uiWindow *w, int borderless);
 _UI_EXTERN void uiWindowSetChild(uiWindow *w, uiControl *child);
 _UI_EXTERN int uiWindowMargined(uiWindow *w);
 _UI_EXTERN void uiWindowSetMargined(uiWindow *w, int margined);
-_UI_EXTERN bool uiWindowResizable(uiWindow *w)
-_UI_EXTERN bool uiWindowSetResizable(uiWindow *w, bool resizable)
+_UI_EXTERN int uiWindowResizable(uiWindow *w);
+_UI_EXTERN void uiWindowSetResizable(uiWindow *w, int resizable);
 _UI_EXTERN uiWindow *uiNewWindow(const char *title, int width, int height, int hasMenubar);
 
 typedef struct uiButton uiButton;
