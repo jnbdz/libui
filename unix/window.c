@@ -229,6 +229,17 @@ void uiWindowSetMargined(uiWindow *w, int margined)
 	setMargined(w->childHolderContainer, w->margined);
 }
 
+int uiWindowResizable(uiWindow *w)
+{
+	return gtk_window_get_resizable(w->window);
+}
+
+void uiWindowSetResizable(uiWindow *w, int resizable)
+{
+	//w->resizeable
+	gtk_window_set_resizable(w->window, resizable);
+}
+
 uiWindow *uiNewWindow(const char *title, int width, int height, int hasMenubar)
 {
 	uiWindow *w;
