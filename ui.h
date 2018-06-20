@@ -265,7 +265,8 @@ _UI_EXTERN uiMenuItem *uiMenuAppendAboutItem(uiMenu *m);
 _UI_EXTERN void uiMenuAppendSeparator(uiMenu *m);
 _UI_EXTERN uiMenu *uiNewMenu(const char *name);
 
-_UI_EXTERN char *uiOpenFile(uiWindow *parent);
+_UI_EXTERN char *uiOpenFile(uiWindow *parent, int multiple);
+_UI_EXTERN char *uiOpenFolder(uiWindow *parent, int multiple, int createFolder);
 _UI_EXTERN char *uiSaveFile(uiWindow *parent);
 _UI_EXTERN void uiMsgBox(uiWindow *parent, const char *title, const char *description);
 _UI_EXTERN void uiMsgBoxError(uiWindow *parent, const char *title, const char *description);
